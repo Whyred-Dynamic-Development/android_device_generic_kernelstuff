@@ -19,5 +19,3 @@ PRODUCT_MANUFACTURER := generic
 TARGET_VENDOR := generic
 
 PRODUCT_SYSTEM_NAME := kernelstuff
-
-TW_THEME=: watch_mdpi

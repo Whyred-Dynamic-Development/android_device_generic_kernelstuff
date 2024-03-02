@@ -34,7 +34,7 @@ while [[ $# -gt 0 ]]; do
 done
 
 # Replace values in BoardConfig.mk
-sed -i "s/^BOARD_KERNEL_IMAGE_NAME := .*$/BOARD_KERNEL_IMAGE_NAME := $out/" device/generic/kernelstuff/BoardConfig.mk
-sed -i "s/^BOARD_KERNEL_PAGESIZE := .*$/BOARD_KERNEL_PAGESIZE := $pagesize/" device/generic/kernelstuff/BoardConfig.mk
-sed -i "s/^TARGET_KERNEL_CONFIG := .*$/TARGET_KERNEL_CONFIG := $defconfig/" device/generic/kernelstuff/BoardConfig.mk
-sed -i "s/^TARGET_KERNEL_SOURCE := .*$/TARGET_KERNEL_SOURCE := $kernelsource/" device/generic/kernelstuff/BoardConfig.mk
+sed -i "s|BOARD_KERNEL_IMAGE_NAME := .*$|BOARD_KERNEL_IMAGE_NAME := $out|" device/generic/kernelstuff/BoardConfig.mk
+sed -i "s|BOARD_KERNEL_PAGESIZE := .*$|BOARD_KERNEL_PAGESIZE := $pagesize|" device/generic/kernelstuff/BoardConfig.mk
+sed -i "s|TARGET_KERNEL_CONFIG := .*$|TARGET_KERNEL_CONFIG := $defconfig|" device/generic/kernelstuff/BoardConfig.mk
+sed -i "s|TARGET_KERNEL_SOURCE := .*$|TARGET_KERNEL_SOURCE := $kernelsource|" device/generic/kernelstuff/BoardConfig.mk

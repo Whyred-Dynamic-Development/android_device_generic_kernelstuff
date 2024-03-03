@@ -9,3 +9,5 @@
 ```lunch twrp_kernelstuff-eng```
 
 ```mka kernel```
+
+```./pack.sh```

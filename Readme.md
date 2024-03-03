@@ -6,6 +6,8 @@
 
 ```./device/generic/kernelstuff/adapt.sh --out Image.gz-dtb --pagesize 2048 --defconfig vendor/msm8953-perf_defconfig --kernel kernel/xiaomi/oxygen```
 
+```source build/envsetup.sh```
+
 ```lunch twrp_kernelstuff-eng```
 
 ```mka kernel```
